@@ -1,0 +1,22 @@
+export const ROMATEM_PAGES = {
+  fizikTedavi: 'https://romatem.com/tedaviler/',
+  yatiliFizikTedavi: 'https://romatem.com/tedaviler/yatili-fizik-tedavi/',
+  felcTedavisi: 'https://romatem.com/tedaviler/felc-tedavisi/',
+  robotikRehabilitasyon: 'https://romatem.com/tedaviler/robotik-rehabilitasyon/',
+  belFitigiTedavisi: 'https://romatem.com/tedaviler/bel-fitigi-tedavisi/',
+  boyunFitigiTedavisi: 'https://romatem.com/tedaviler/boyun-fitigi-tedavisi/',
+  belAgrisiTedavisi: 'https://romatem.com/tedaviler/bel-agrisi-tedavisi/',
+  inflamatuarBelAgrisiTedavisi: 'https://romatem.com/tedaviler/inflamatuar-bel-agrisi-tedavisi/',
+  msRehabilitasyonu: 'https://romatem.com/tedaviler/multiple-skleroz-ms-tedavisi/',
+  parkinsonRehabilitasyonu: 'https://romatem.com/tedaviler/parkinson-rehabilitasyonu/',
+  romatizmaTedavisi: 'https://romatem.com/tedaviler/romatizma-tedavisi/',
+  kasHastaliklarRehabilitasyonu: 'https://romatem.com/tedaviler/kas-hastaliklari-rehabilitasyonu/',
+  omurilikyaralanmalariRehabilitasyonu: 'https://romatem.com/tedaviler/omurilik-yaralanmalari-rehabilitasyonu/',
+  ankilozanSpondilitTedavisi: 'https://romatem.com/tedaviler/ankilozan-spondilit-tedavisi/',
+  serebralPalsiTedavisi: 'https://romatem.com/tedaviler/serebral-palsi-cp-tedavisi/',
+  inmeTedavisi: 'https://romatem.com/tedaviler/inme-tedavisi/',
+  fizikTedaviRehabilitasyon: 'https://romatem.com/tedaviler/fizik-tedavi-ve-rehabilitasyon/',
+  iletisim: 'https://romatem.com/iletisim/',
+  eIslemler: 'https://romatem.com/e-islemler/',
+  saglikRehberi: 'https://romatem.com/saglik-rehberi/'
+} as const;
