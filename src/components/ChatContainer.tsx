@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ChatMessage } from './ChatMessage';
 import { ChatInput } from './ChatInput';
 import type { Message } from '../types/chat';
@@ -11,9 +11,19 @@ interface ChatContainerProps {
 }
 
 export function ChatContainer({ messages, isLoading, onSendMessage }: ChatContainerProps) {
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
+
   return (
     <main className="flex-1 max-w-4xl w-full mx-auto p-4 flex flex-col gap-4">
-      <div className="flex-1 bg-white rounded-lg shadow-sm p-4 space-y-4 min-h-[400px]">
+      <div className="flex-1 bg-white rounded-lg shadow-sm p-4 space-y-4 min-h-[400px] overflow-y-auto">
         {messages.length === 0 ? (
           <div className="h-full flex items-center justify-center text-gray-500 text-center px-4 space-y-4">
             <div>
@@ -30,9 +40,12 @@ export function ChatContainer({ messages, isLoading, onSendMessage }: ChatContai
             </div>
           </div>
         ) : (
-          messages.map((message, index) => (
-            <ChatMessage key={index} message={message} />
-          ))
+          <>
+            {messages.map((message, index) => (
+              <ChatMessage key={index} message={message} isTyping={isLoading && index === messages.length - 1} />
+            ))}
+            <div ref={messagesEndRef} />
+          </>
         )}
       </div>
 

@@ -42,4 +42,4 @@ npm run dev
 
 ## Lisans
 
-MIT 
+Bu proje özel lisanslıdır ve tüm hakları Romatem Fizik Tedavi ve Rehabilitasyon Merkezi'ne aittir. İzinsiz kullanılamaz, kopyalanamaz veya dağıtılamaz. 

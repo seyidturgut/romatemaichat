@@ -5,7 +5,8 @@ export function isPhysioRelatedQuery(message: string): boolean {
   // Check for farewell messages
   const farewellWords = [
     'teşekkür', 'teşekkürler', 'sağol', 'sağolun',
-    'görüşürüz', 'hoşçakal', 'güle güle', 'bye', 'iyi günler'
+    'görüşürüz', 'hoşçakal', 'güle güle', 'bye', 'iyi günler',
+    'rica', 'memnun'
   ];
 
   if (farewellWords.some(word => lowerMessage.includes(word))) {

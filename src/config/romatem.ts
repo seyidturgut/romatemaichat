@@ -1,6 +1,6 @@
 export const ROMATEM_PAGES = {
   fizikTedavi: 'https://romatem.com/tedaviler/',
-  yatiliFizikTedavi: 'https://romatem.com/tedaviler/yatili-fizik-tedavi/',
+  yatiliFizikTedavi: 'https://romatem.com/tedaviler/yatili-fizik-tedavisi/',
   felcTedavisi: 'https://romatem.com/tedaviler/felc-tedavisi/',
   robotikRehabilitasyon: 'https://romatem.com/tedaviler/robotik-rehabilitasyon/',
   belFitigiTedavisi: 'https://romatem.com/tedaviler/bel-fitigi-tedavisi/',
@@ -18,5 +18,6 @@ export const ROMATEM_PAGES = {
   fizikTedaviRehabilitasyon: 'https://romatem.com/tedaviler/fizik-tedavi-ve-rehabilitasyon/',
   iletisim: 'https://romatem.com/iletisim/',
   eIslemler: 'https://romatem.com/e-islemler/',
-  saglikRehberi: 'https://romatem.com/saglik-rehberi/'
+  saglikRehberi: 'https://romatem.com/saglik-rehberi',
+  onlineRandevu: 'https://randevu.romatem.com/'
 } as const;
